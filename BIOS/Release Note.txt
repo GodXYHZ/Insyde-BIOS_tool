@@ -1,0 +1,216 @@
+Insyde H2OEZE Release Note
+
+--------------------------------------------------------------------------------
+Release Version 100.00.02.10 06-27-2014 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+1. Added bios product name replacement
+
+--------------------------------------------------------------------------------
+Release Version 100.00.02.09 02-24-2014 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+BugFix:
+1. Fixed issue that data may overflow when searching & verifying some kind of information
+
+--------------------------------------------------------------------------------
+Release Version 100.00.02.08 02-10-2014 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+1. Added VBT file format support for module replacement
+
+--------------------------------------------------------------------------------
+Release Version 100.00.02.07 01-21-2014 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+1. Fixed ffs last section alignment issue - last section size must be its actual size instead of aligned size
+2. Fixed replacing logo doesn't work issue
+3. Fixed ffs section alignment issue
+4. Changed firmware image type search to walk through all firmware volumes till match found
+5. Fixed issue 0028006:[EZH2O Win] The function of close can not clear the main screen for "Setup Utility Default"
+6. Update firmware volume checksum after data changed
+7. Enlarge firmware volume size if size isn't enough when replacing module with larger one
+
+--------------------------------------------------------------------------------
+Release Version 100.00.02.00 11-06-2013 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+1. Change product name from EzH2O to H2OEZE
+
+--------------------------------------------------------------------------------
+Release Version (SEG) 100.00.01.00 04-22-2013 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+NewFeature:
+1. Merged two plugin functions into single one
+
+--------------------------------------------------------------------------------
+Release Version (SEG) 100.00.00.01 04-18-2013 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+NewFeature:
+1. Merged changes of EzH2O version 2.1.0.25
+2. Added new plugin dll to support security related features
+3. Added preview user selected image file for logo replacement function
+4. Added replace bios version function
+
+--------------------------------------------------------------------------------
+Release Version (SEG) 100.00.00.00 02-06-2013 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+NewFeature:
+1. Merged changes of EzH2O version 2.1.0.23 
+2. Added support functions of setup variable edit utility
+3. Change version to start from 100.00.00.00
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.23 12-13-2012 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+1. Add sorting feature to StringUpdate dialog
+
+NewFeature:
+1. Added support the plugin feature
+2. Added support -genlogoffs to generate logo ffs module
+3. Added support -inslogo to insert a logo module
+4. Added support to load CapsuleImage bin file, FlashPacker exe file (IsEzH2OPlugin.dll is required)
+5. Added support to .EFI format for module replace function 
+
+BugFix:
+1. ITS#19083: SCU "boot" item cannot work after the default value modified by EzH2O
+2. Failed to load BayTrail fd image 
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.22 04-17-2012 
+--------------------------------------------------------------------------------
+Update:
+1. Update the string words
+2. Display VID and DID in the guid list in OpROM Replace dialog
+
+BugFix:
+1. ITS#18386: can't replace FV00
+2. ITS#18387: can't modify default settings of SCU 
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.21 03-22-2012 
+--------------------------------------------------------------------------------
+NewFeature:
+1. Add SCU String Update function (Support Kernel version Rev3.5B: 03.62.10, Rev3.7: 03.72.10, Rev5.0: 05.02.10)
+2. Add Factory Copy Merge function (Support Kernel version 03.72.08 and later)
+3. Support EDK2
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.20 01-04-2012 
+--------------------------------------------------------------------------------
+1. Fix: Fix incorrect processing about Hii2.1 opcode=numeric.
+2. Fix: Copy setup.css to temp folder.
+3. Add new feature: Support expoorting Setup Menu Settings to CSV file.
+4. Add new feature: export module and export oprom
+5. Fix issue #16650: The EzH2O Ver2.1.0.19 always hang during load the FD file
+6. Add new feature: logo image - support TGA format
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.19 07-11-2011 
+--------------------------------------------------------------------------------
+1. Show a console windonw when running in command-line mode
+2. Fix issue #12976: OpROM can't be updated when there are two main firmware volume existing
+3. BugFix: To replace a PEI module of bigger or smaller size will fail
+4. Update the display format of "FD Information" dialog     
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.18 11-26-2010 
+--------------------------------------------------------------------------------
+1. Add new feature: command line support
+2. Fix issue #11191: Delete and Add Microcode function are not working
+3. Fix issue #11218: replace Fv02 with log enabled will result in tool crash
+4. Fix issue #11217: it's failed to insert USBKB module into Fv02  
+5. Fix issue #11223: it can't show the modified logo by replacing a module generated from "generate logo ffs"
+6. Fix issue #11216: progress bar not showing correctly when inserting module
+7. Fix issue #11219: progress bar not showing correctly when replacing fv
+8. Fix issue #11215: progress bar not showing correctly when replacing module 
+9. Fix issue #11214: progress bar not showing correctly when loading file
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.17 11-3-2010 
+--------------------------------------------------------------------------------
+1. Add new feature to update SCU default settings in ROM
+2. Update setup menu parsing policy (bios version 03.60.44 later for Hii0.9 and 03.70.44 later for Hii2.1)
+3. Fix issue: "insert module" doesn't work correctly
+4. Fix issue: replace the same module, but get a different bios image
+5. Update Help file
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.16 8-27-2010
+--------------------------------------------------------------------------------
+1. Fix issue #9976: can't replace module
+2. Fix issue that showing setup menu causes fail
+3. Fix issue #9976: add functions to support PEI module replacement
+4. Add features #10318: support Hii 2.1
+5. Fix issue: can't insert PEI module
+6. Fix issue: can't delete DXE/PEI module again after deleting and then inserting 
+7. Add checking mechanism to check if the insertion module is already existing
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.15 2-23-2010
+--------------------------------------------------------------------------------
+1.Fix issue that setup utility configuration of EzH2O is unsuccessfully on Kernel version 3.59.44.(3.59.43 is successfully)
+--------------------------------------------------------------------------------
+Release Version 2.1.0.14 10-15-2009
+--------------------------------------------------------------------------------
+1.Added that tool can add one of microcode files, and parse each microcode header.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.13 07-14-2009
+--------------------------------------------------------------------------------
+1.Fix issue that FV(not FVMAIN) can't replace moudle by bin file.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.12 06-29-2009
+--------------------------------------------------------------------------------
+1.Updated the user direction of new function in HELP menu.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.11 04-10-2009
+--------------------------------------------------------------------------------
+1.Added that generate logo .ffs file function.
+2.Updated the "Module_GUID_2_Name.ini" user direction in HELP menu.
+3.Added the "Attributed" to do the FV replace judgment.
+4.Enabled the replace Microcode item and updated  for 3.5B.(must update kernel version 03.59.16)
+5.Enabled the Setup Menu  item and modified for UEFIx64.(must update kernel version 03.59.16)
+6.Added that display compiler version at Fd information.(must update kernel version 03.59.16)
+7.Added that Log function to record execution.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.10 02-24-2009
+--------------------------------------------------------------------------------
+1.Fixed issue #2984: EZTool not working after changing NO to FV_IN_SPARE_SUPPORT. 
+2.Disable the DMIStructure function.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.9 12-29-2008
+--------------------------------------------------------------------------------
+1.Fix issue that change LOGO and save FD file,then reopen it fail.
+2.Fix issue that loading LOGO image is failed , reopen change LOGO function will show wrong LOGO image.
+3.Fix issue that file that has OEMDS uses change EC module cause OEMDS be replaced by '0xFF'.
+4.Fix issue that module cause hang when user use the replace function.
+5.Fix issue that the password of FV file become the GUID on Delete function.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.8 11-18-2008
+--------------------------------------------------------------------------------
+1. Add InsydeBIOS check function.
+
+--------------------------------------------------------------------------------
+Release Version 2.1.0.7 11-10-2008
+--------------------------------------------------------------------------------
+1.Fixed Insert module function failed issue.
+
+--------------------------------------------------------------------------------		
+Release Version 2.1.0.6
+--------------------------------------------------------------------------------
+1.Fix using EZH2O open BIOS 1.5M *.fd file or some 1M *.fd file but it hang on open file. 
+2.Fix EzH2O help file that in [Modify a logo] page have show some "?" characters.
+3.Fix the DmiStructure must entry "enter" key for modify strings.
+4.Fix the EzH2O's main process bar not right when patch DmiStructure. 
+5.Fix show user want save file after finishing save as file
+6.Add checkbox in DMIStructure utility.
+7.Add EC¡BPXE and External VGA utilities.
+8.NEW Feature:Enhancement of EZH2O to show GUID and module name in [Delete Existing Module] function.
+
+Release Files:EzH2O.exe¡BEzH2O.ini¡BOEMDS.ini¡BModule_GUID_2_Name.ini¡BLzmaDll.dll and EZH2O-HELP.CHM

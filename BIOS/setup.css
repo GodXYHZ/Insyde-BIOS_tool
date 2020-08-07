@@ -1,0 +1,113 @@
+BODY {
+	margin-top:       20px;
+	margin-left:      20px;
+	margin-right:     20px;
+	margin-bottom:    100px;
+    BACKGROUND-COLOR: white;
+}
+
+.tbl_dialog
+{
+    BORDER-LEFT:      #0e6bff thin outset;
+    BORDER-TOP:       #0e6bff thin outset;
+    BORDER-RIGHT:     #0e6bff thin outset;
+    BORDER-BOTTOM:    #0e6bff thin outset;
+    BACKGROUND-COLOR: #ece9d8;
+}
+
+.tr_title
+{
+	font-family:      Arial;
+	font-size:        16px;
+	font-style:       normal;
+	line-height:      normal;
+	font-weight:      bold;
+	font-variant:     normal;
+	text-transform:   none;
+	color:            white;
+    BACKGROUND-COLOR: #0e6bff;
+}
+ 
+.div_area {
+    BORDER-LEFT:      white thin inset;
+    BORDER-TOP:       white thin inset;
+    BORDER-RIGHT:     white thin inset;
+    BORDER-BOTTOM:    white thin inset;
+    HEIGHT:           500px;
+    WIDTH:            100%;
+    OVERFLOW:         auto;
+}
+
+.tr_formset
+{
+	font-family:      Arial;
+	font-size:        14px;
+	font-style:       normal;
+	line-height:      normal;
+	font-weight:      bold;
+	font-variant:     normal;
+	text-transform:   none;
+	color:            black;
+    BACKGROUND-COLOR: #e0e0e0;
+}
+
+.tr_form
+{
+	font-family:      Arial;
+	font-size:        14px;
+	font-style:       normal;
+	line-height:      normal;
+	font-weight:      bold;
+	font-variant:     normal;
+	text-transform:   none;
+	color:            black;
+    BACKGROUND-COLOR: #eaeaea;
+}
+
+.tr_subtitle
+{
+	font-family:      Arial;
+	font-size:        12px;
+	font-style:       normal;
+	line-height:      normal;
+	font-weight:      bold;
+	font-variant:     normal;
+	text-transform:   none;
+	color:            black;
+    BACKGROUND-COLOR: #f5f5f5;
+}
+
+.tr_regular
+{
+	font-family:      Arial;
+	font-size:        12px;
+	font-style:       normal;
+	line-height:      normal;
+	font-weight:      normal;
+	font-variant:     normal;
+	text-transform:   none;
+	color:            black;
+    BACKGROUND-COLOR: white;
+}
+
+.button_cls
+{
+    FONT-SIZE:        14px;
+    WIDTH:            90px;
+    FONT-FAMILY:      Arial;
+}
+
+.select_cls
+{
+    FONT-SIZE:        14px;
+    WIDTH:            140px;
+    FONT-FAMILY:      Arial;
+}
+
+.edit_cls
+{
+    FONT-SIZE:        14px;
+    WIDTH:            140px;
+    FONT-FAMILY:      Arial;
+}
+
